@@ -15,6 +15,10 @@ class Honda(Factory):
         super().__init__(Bt, Et, Tyres)
         self.glass = glass
 
+    def showdets(self):
+        super().showdets()
+        print("glass type", self.glass)
+
 
 farari = Factory("covered", "2 cycles", 4)
 alto = Factory("not covered", "1 cycle", 2)
